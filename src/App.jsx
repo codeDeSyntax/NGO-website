@@ -1,7 +1,7 @@
+import Mainpage from "./components/Mainpage";
+
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <Mainpage/>
   )
 }
