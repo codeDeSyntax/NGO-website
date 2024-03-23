@@ -6,8 +6,8 @@ const Mainpage = () => {
   return (
     <main className="w-full min-h-screen">
         <Welcomepage/>
-        <Categories/>
         <Trust/>
+        <Categories/>
     </main>
   )
 }

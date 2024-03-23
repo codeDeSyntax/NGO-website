@@ -51,8 +51,8 @@ const Navbar = () => {
   return (
     <div className="w-full">
       <nav
-        className={`w-full mx-auto flex items-center justify-between py-3 px-8  fixed  ${
-          scrolled ? "bg-[rgba(0,0,0,0.9)]" : "bg-transparent"
+        className={`w-full z-40 mx-auto flex items-center justify-between py-3 px-3 md:px-8  fixed  ${
+          scrolled ? "bg-[rgba(0,0,0,0.9)]" : "bg-transparent "
         }`}
       >
         <div className={`flex  gap-2`}>
@@ -100,7 +100,7 @@ const Navbar = () => {
       </nav>
       {/* SIDEBAR  FOR MOBILE VIEWPORT */}
       {displaySideBar && (
-        <div className="fixed sm:hidden top-0 h-full w-1/2 flex-col flex gap-6 items-center  bg-[rgba(0,0,0,0.9)] left-0 py-4 px-2 z-20">
+        <div className="fixed sm:hidden top-0 h-full w-1/2 flex-col flex gap-6 items-center  bg-[rgba(0,0,0,0.9)] left-0 py-4 px-2 z-40">
           {links.map((link) => (
             <li
               key={link.id}
