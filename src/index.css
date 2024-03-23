@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .border-gradient {
+      background-image: linear-gradient(to right, #ff0000, #0000ff); /* Change colors as needed */
+    }
+  }

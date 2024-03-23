@@ -1,4 +1,10 @@
-import { FaBars, FaTimes } from "react-icons/fa";
+import {
+  FaBars,
+  FaTimes,
+  FaFacebook,
+  FaInstagram,
+  FaTwitter,
+} from "react-icons/fa";
 import { useState, useEffect } from "react";
 const Navbar = () => {
   const [displaySideBar, setDisplaySidebar] = useState(false);
@@ -124,6 +130,18 @@ const Navbar = () => {
             alt=""
             className="sixe-20 rounded-md "
           />
+
+          <div className="flex gap-10">
+            <a href="" className="text-white font-bold text-2xl">
+              <FaFacebook />
+            </a>
+            <a href="" className="text-white font-bold text-2xl">
+              <FaInstagram />
+            </a>
+            <a href="" className="text-white font-bold text-2xl">
+              <FaTwitter />
+            </a>
+          </div>
         </div>
       )}
     </div>

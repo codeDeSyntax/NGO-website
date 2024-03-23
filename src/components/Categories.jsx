@@ -33,9 +33,9 @@ const Categories = () => {
   ];
 
   return (
-    <section className="w-full min-h-screen mt-10">
+    <section className="w-full min-h-screen">
       <div className="w-[90%] m-auto">
-        <h1 className="text-2xl text-center md:text-4xl font-bold text-gray-600">
+        <h1 className="text-2xl text-center md:text-3xl font-bold text-gray-600">
           Categories
         </h1>
         <p className="text-center text-gray-700 text-[1rem] py-2 md:px-20">
@@ -45,7 +45,7 @@ const Categories = () => {
           temporibus non. Animi, amet mollitia.
         </p>
       </div>
-      <div className="w-[90%] gap-x-3 gap-y-[1rem]  m-auto h-16 md:h-20  grid grid-cols-[90%] sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-[18%,18%,18%,18%,18%] items-center justify-center py-4">
+      <div className="w-[90%] gap-x-3 gap-y-[1rem]  m-auto h-16 md:h-20  grid grid-cols-[78%] sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-[18%,18%,18%,18%,18%] items-center justify-center py-4">
         {categories.map((category, index) => {
           return (
             <div
