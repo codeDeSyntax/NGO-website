@@ -4,7 +4,7 @@ const Events = () => {
   const month = date.getMonth() + 1;
 
   return (
-    <section className="w-full my-10">
+    <section className="w-full my-10 ">
       <div className="w-[90%] m-auto flex flex-col md:flex-row items-center gap-4">
         <div className="w-[90%] md:w-[60%] h-24 rounded-bl-[3rem] rounded shadow-sm hover:scale-105 duration-300 flex justify-center items-center hover border-2 p-2 bg-gray-100 skew-y-3">
           <p className="text-center font-mono underline">

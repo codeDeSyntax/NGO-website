@@ -7,7 +7,7 @@ import "swiper/css/scrollbar";
 import "react-alice-carousel/lib/alice-carousel.css";
 const Trust = () => {
   return (
-    <section className="w-full px-2">
+    <section className="w-full px-2 ">
       <h1 className="text-center font-bold bg-white text-gray-600 text-2xl md:text-3xl py-4">
         Trust Gallery..
       </h1>
