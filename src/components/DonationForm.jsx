@@ -1,7 +1,13 @@
 const DonationForm = () => {
   return (
     <div className="w-full min-h-screen bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.7),rgba(28,0,0,0.8)),url('https://images.unsplash.com/photo-1594708767771-a7502209ff51?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] flex flex-col items-center justify-center bg-cover bg-no-repeat">
-    
+      <div className="w-[80%] shadow-md shadow-orange-500 mb-5">
+        {" "}
+        <marquee className="text-white font-mono font-bold md:text-3xl">
+          Your <span className="text-orange-500">Contribution</span> is warlmy
+          welcomed ...
+        </marquee>
+      </div>
       <div className="w-[80%] mx-auto bg-white rounded p-8 shadow-md ">
         <h2 className="text-2xl font-semibold mb-4 font-mono text-gray-700">
           Donate to our NGO

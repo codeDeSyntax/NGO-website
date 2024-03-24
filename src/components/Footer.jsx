@@ -2,7 +2,7 @@ function Footer() {
   return (
     <footer className="bg-[#2d2122] text-white py-8">
       <div className="container mx-auto px-4">
-        <div className="flex flex-wrap justify-between">
+        <div className="flex flex-wrap justify-between ">
           <div className="w-full  px-4 py-6 mt-8">
             <div className="container mx-auto text-center">
               <h2 className="text-lg font-semibold mb-2">About Us</h2>
@@ -16,12 +16,12 @@ function Footer() {
             </div>
           </div>
 
-          <div className="w-full md:w-1/3 mb-4 md:mb-0">
+          <div className="w-full md:w-1/3 mb-4 md:mb-0 flex-col flex items-center justify-center">
             <h2 className="text-lg font-semibold mb-2">Contact Us</h2>
             <p>Email: contact@example.com</p>
             <p>Phone: +1234567890</p>
           </div>
-          <div className="w-full md:w-1/3 mb-4 md:mb-0">
+          <div className="w-full md:w-1/3 mb-4 md:mb-0 flex flex-col items-center justify-center">
             <h2 className="text-lg font-semibold mb-2">Follow Us</h2>
             <ul className="flex space-x-4">
               <li>
@@ -41,7 +41,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="w-full md:w-1/3">
+          <div className="w-full md:w-1/3 flex flex-col items-center justify-center">
             <h2 className="text-lg font-semibold mb-2">Donate Now</h2>
             <p>Your donation can make a difference.</p>
             <a

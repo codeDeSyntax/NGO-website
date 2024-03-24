@@ -58,19 +58,21 @@ const Charity = () => {
               <img
                 src={category.imageLink}
                 alt={category.title}
-                className="w-full h-[40%] object-cover rounded-md transition-opacity duration-300 hover:opacity-50"
+                className="w-full h-[40%] object-cover rounded-t-md transition-opacity duration-300 hover:opacity-50 border-b-8 border-orange-500"
               />
 
               <div className="px-4 py-6 ">
-                <h2 className="text-xl font-bold text-gray-700">
+                <h2 className="text-xl  font-bold text-gray-700">
                   {category.title}
                 </h2>
                 <div className="flex text-orange-500 items-center justify-between  pb-4">
-                  <p className="flex items-center font-serif text-[.8rem]">
+                  <p className="flex items-center font-serif text-[.8rem] md:text-[1rem] gap-1">
                     {category.icon} GOAL
                   </p>
-                  <p className="text-[.8rem] ">{category.target}</p>
-                  <p className="text-gray-600 font-serif text-[.8rem] flex">
+                  <p className="text-[.8rem] md:text-[1rem]">
+                    {category.target}
+                  </p>
+                  <p className="text-gray-600 font-serif text-[.8rem] md:text-[1rem] flex">
                     RAISED :
                     <span className="text-orange-500">{category.raised}</span>
                   </p>
@@ -78,6 +80,7 @@ const Charity = () => {
                 <Slider
                   className=" py-1 md:py-4"
                   autoFocus
+                  aut
                   color="orange"
                   startPoint={40}
                   count={4}

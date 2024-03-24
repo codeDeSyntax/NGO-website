@@ -29,6 +29,7 @@ const Trust = () => {
         spaceBetween={4}
         slidesPerView={3}
         navigation
+        autoplay={true}
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
         onSwiper={(swiper) => console.log(swiper)}
