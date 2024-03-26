@@ -27,14 +27,6 @@ const Charity = () => {
       icon: <FaMoneyBill className="text-orange-500" />,
       imageLink: "https://charity.w3itexperts.com/xhtml/images/blog/thum3.jpg",
     },
-    {
-      id: 4,
-      title: "Education for children",
-      target: "125676 $",
-      raised: "2467 $",
-      icon: <FaMoneyBill className="text-orange-500" />,
-      imageLink: "https://charity.w3itexperts.com/xhtml/images/blog/thum3.jpg",
-    },
   ];
   return (
     <section className="w-full min-h-screen ">
@@ -48,20 +40,20 @@ const Charity = () => {
           tempora, dignissimos
         </p>
       </div>
-      <div className="w-[90%] gap-x-3 gap-y-[1rem]  m-auto  grid sm:grid-cols-2 md:grid-cols-[35%,35%,35%] items-center justify-center py-4">
+      <div className="w-[90%] md:w-[80%] gap-x-3 gap-y-[1rem]  m-auto  grid sm:grid-cols-2 md:grid-cols-[35%,35%,35%] items-center justify-center py-4">
         {categories.map((category, index) => {
           return (
             <div
               key={index}
-              className={` h-[80vh] bg-white rounded-lg shadow-md hover:bg-opacity-25 `}
+              className={` h-[60vh] md:h-[80vh] bg-white rounded-lg shadow-lg hover:bg-opacity-25 `}
             >
               <img
                 src={category.imageLink}
                 alt={category.title}
-                className="w-full h-[40%] object-cover rounded-t-md transition-opacity duration-300 hover:opacity-50 border-b-8 border-orange-500"
+                className="w-full h-[30%] md:h-[40%] object-cover rounded-t-md transition-opacity duration-300 hover:opacity-50 border-b-8 border-orange-500"
               />
 
-              <div className="px-4 py-6 ">
+              <div className="px-4 mt-2 m-auto">
                 <h2 className="text-xl  font-bold text-gray-700">
                   {category.title}
                 </h2>
@@ -84,18 +76,19 @@ const Charity = () => {
                   color="orange"
                   startPoint={40}
                   count={4}
-                  railStyle={{ color: "orange" }}
                 />
 
-                <p className="text-center py-6 font-serif">
+                <p className=" py-2 font-serif ">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Rerum rem sit esse assumenda maiores ab nihil sapiente
                   nesciunt minus debitis!
                 </p>
 
-                <button className="w-[5rem] p-2 bg-orange-500 text-white">
-                  Details
-                </button>
+                <div className="w-full flex items-center justify-center">
+                  <button className="w-[50%] p-2 bg-orange-500 text-white">
+                    Details
+                  </button>
+                </div>
               </div>
             </div>
           );

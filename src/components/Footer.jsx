@@ -51,6 +51,8 @@ function Footer() {
               Donate
             </a>
           </div>
+
+          
         </div>
         <div className="mt-8 text-center">
           <p>&copy; 2024 NGO Donation. All rights reserved.</p>
